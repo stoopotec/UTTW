@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.game {
+  flex-grow: 1;
+  background-color: #eaeaea;
+}
+
+.nav {
+  flex-grow: 1;
+  background-color: #ccc;
+}
+
+
+.box {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+
+  box-shadow: 0 0 10px black;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+}
+
+.space {
+  background-color: lightgray;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.space:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.1);
+}
+
+.cross {
+  background-color: red;
+}
+
+.circl {
+  background-color: blue;
+}

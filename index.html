@@ -3,9 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ultimate Tic Tac Toe</title>
+    <link rel="icon" type="image/png" href="./favicon.ico"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="fullscreen.js"></script>
+    <script src="DisplayManager.js"></script>
+    <script src="Human.js"></script>
+    <script src="Processor.js"></script>
 </head>
 <body>
-    
+    <div class="game" id="fullscreen-element">
+        <div id="playground">
+
+        </div>
+        <button onclick="toggleFullScreen()">Toggle Fullscreen</button>
+        
+    </div>
+    <div class="nav">
+        <button onclick="ProcessorRestart()">Restart</button>
+        <form action="">
+            <select name="player1" id="player1">
+                <option value="human">Human</option>
+                <option value="bot">Bot</option>
+            </select>
+            as X
+            vs
+            <select name="player2" id="player2">
+                <option value="human">Human</option>
+                <option value="bot">Bot</option>
+            </select>
+            as O
+        </form>
+    </div>
+    <template id="playground-template">
+        <div class="box">
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+            <div class="box">
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+                <div class="cell space"></div>
+            </div>
+        </div>
+    </template>
 </body>
 </html>
