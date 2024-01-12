@@ -17,7 +17,7 @@ const Human = {
     
     waitForMove: false,
     
-    prepareMove(playgroundState, whoMove) {
+    prepareMove(playgroundState, boxCanGo, whoMove) {
         this.waitForMove = true; who = whoMove;
     },
 

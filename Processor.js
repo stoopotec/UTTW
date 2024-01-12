@@ -118,13 +118,13 @@ function ProcessorRestart() {
 
     
     Cross.addEventMoveListener((indexes) => {
-        if (!trySet(indexes, CrossTag)) Cross.prepareMove(PlaygroundState, WhoMove);
-        else { WhoMove = CirclTag; Circl.prepareMove(PlaygroundState, WhoMove); }
+        if (!trySet(indexes, CrossTag)) Cross.prepareMove(PlaygroundState, BoxCanGo, WhoMove);
+        else { WhoMove = CirclTag; Circl.prepareMove(PlaygroundState, BoxCanGo, WhoMove); }
     });
 
     Circl.addEventMoveListener((indexes) => {
-        if (!trySet(indexes, CirclTag)) Circl.prepareMove(PlaygroundState, WhoMove);
-        else { WhoMove = CrossTag; Cross.prepareMove(PlaygroundState, WhoMove); }
+        if (!trySet(indexes, CirclTag)) Circl.prepareMove(PlaygroundState, BoxCanGo, WhoMove);
+        else { WhoMove = CrossTag; Cross.prepareMove(PlaygroundState, BoxCanGo, WhoMove); }
     });
 
     Cross.prepareMove(PlaygroundState, WhoMove);
